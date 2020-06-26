@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/fontawesome.css">
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+    <style>
+    @font-face{
+        font-family: 'Font Awesome 5 Brand';
+        src: url('/font/fa-brands-400.woff') format("woff"),
+            url('/font/fa-brands-400.ttp')  format("turetype"),
+            url('/font/fa-brands-400.eot') format("embedded-opentype");}
+           
+    
+        @font-face{
+        font-family: 'Font Awesome 5 Free Regular';
+        src :   url('/font/fa-regular-400.woff') format("woff"),
+                url('/font/fa-regular-400.ttp')  format("turetype"),
+                url('/font/fa-regular-400.eot') format("embedded-opentype");
+            }
+        @font-face{
+            font-family:'Font Awesome 5 Free Solid';
+            src: url('/font/fa-solid-900.woff') format("woff"),
+            url('/font/fa-solid-900.ttp')  format("turetype"),
+            url('/font/fa-solid-900.eot') format("embedded-opentype");}
+    
+
+i{
+    font-family: 'Font Awesome 5 Free Solid';
+    font-weight: 400;   
+}
+*{
+    /* border: 1px solid #000000; */
+    position: relative;
+    font-family: 微軟正黑體;
+
+   
+}
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;      
+    position: relative; 
+}
+body{
+    height: 0;
+}
+/* Nav */
+nav{
+    transition: 1s;
+    width: 1920px;
+    margin: auto; 
+}
+
+.navbar.navbar-expand-xl.fixed-top.white {
+        background-color: #ffffff;
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(15, 15, 16,0.3);
+        width: 100%;
+        }
+
+
+.navbar-brand img{
+    width: 60px;
+    height: 60px;   
+    /* border: 1px solid #E1CFBB; */
+    border-radius: 100%;
+}
+.navbar-nav li{
+   text-align: right;
+   
+}
+li a {
+    color: #E1CFBB;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+/* Header */
+.header{
+    position: relative;
+    background-image: url(/images/BannerAI-1.jpg);
+    height: 855px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    vertical-align: middle;
+   
+}
+
+
+.header .container{
+    display: flex;
+    position: relative;
+    justify-content: center ;
+    align-items: center;
+    height: 100%;
+       
+}
+.header .container h1{
+    text-align: center;
+    font-size: 40px;
+    z-index: 10;
+    color: #686FAB;
+    word-spacing: 5px;
+    font-family: 'Boogaloo';
+    
+    
+}
+.cloud{
+    display:flex;
+    position: relative;
+    top: 250px;
+    
+
+}
+/* About */
+#about{
+    position: relative;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;   
+}
+
+#about .me{
+    width: 100px;
+    height: 110px;
+    position: relative;
+    border-radius: 100%;
+    border:1px solid #686FAB;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 50px ;
+    top: 50px;
+}
+#about h1{
+    color: #E1CFBB;
+    font-size: 50px;
+    margin-bottom: 50px;
+    
+    
+}
+#about h2{
+    text-align: center;
+    font-size: 30px;    
+    top:50px;
+    color: #686FAB;
+}
+#about .lucky1{
+    position: relative;
+    width: 144px;
+    height: 147px;
+    transform: rotate(15deg);
+    right: -85%;
+    top: -200px
+   
+}
+#about .lucky2{
+    position: relative;
+    width: 144px;
+    height: 147px;
+    transform: rotate(-30deg);    
+    top: 50px;
+    left: -10%;
+}
+/* Works */
+#works{
+    position: relative;
+    display: flex;
+    /* display: none; */
+}
+
+#works .col-12{
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+#works h1{
+    color: #E1CFBB;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.carousel-inner img {
+      width: 100%;
+      height: auto;
+      
+      
+      
+  }
+#works .btn{
+    color:#686FAB;
+    left: 50%;
+    transform: translate(-50%);   
+    border: 1px solid #686FAB; 
+    margin-top: 30px;
+    font-weight: 900;
+    
+}  
+#works #demo{
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+#works #left{
+    font-size: 40px;
+    color: #000000;
+    right: 100px;
+    
+}
+#works #right{
+    font-size: 40px;
+    color: #000000;
+    left: 100px;
+}
+/* Contact */
+#contact{
+    margin-top: 50px;
+   
+    
+}
+#contact .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#contact .cloud1, #contact .cloud3{
+    width: 179px;
+    height: 98px;
+    
+}
+#contact .cloud2{
+    width: 160px;
+    height: 106px;
+}
+
+    
+
+#contact .col-12{
+    margin-bottom: 50px;
+    
+}
+#contact h1{
+    font-size: 40px;
+    line-height: 40px;
+    color: #686FAB;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 50px;
+}
+#contact h2{
+    font-size: 30px;
+    line-height: 40px;
+    color: #686FAB;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%)
+    
+}
+#contact p{
+    font-size: 20px;
+    margin: 0;
+}
+#contact .col-md-6{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    transform: translate(-50%);
+    left: 50%;
+    margin-bottom: 10px;
+    
+}
+#contact i{
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#contact .lucky3{
+    margin-right: 20px;
+}
+#contact .lucky4{
+    margin-right: 20px;
+}
+#contact .lucky5 {
+    margin-right: 20px;
+}
+/* #contact #lucky{
+    left: 80%;   
+} */
+
+
+/* Footer */
+#footer{
+    position: relative;
+    height: 200px;
+    margin-top: 50px;
+    background-image: url(/images/BannerAI-1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    bottom: 0;
+     
+}
+
+#footer .container{
+    text-align: center;
+    padding: 0;    
+    padding-top: 50px;
+}
+#footer .container p{
+    color: #AE6C84;
+    z-index: 1
+}
+#footer .container img{
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+#footer a{
+    width: 50px;
+    height: 50px;
+}
+#sun {
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none
+    
+}
+.fab{
+    font-family: 'Font Awesome 5 Brand';
+    font-size: 40px;
+    z-index: 5;
+    color: #AE6C84;
+    
+    
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+iframe{
+    position: relative;
+    margin: 10px 0 ;
+    border: 1px solid #000;
+}
+.fa-volume-up{
+   position: fixed;
+    right: 0;
+    z-index: 20;
+    top: 30%;
+    margin-right: 10px;
+}
+.fa-volume-mute{
+   position: fixed;
+    right: 0;
+    z-index: 20;
+    top: 30%;
+    margin-right: 10px;
+}
+/* RWD */
+ @media screen and (max-width:375px){
+    #works img{
+        width: 100%;
+        height: auto;
+        
+     }
+     #contact #lucky{
+        left: 0; 
+        transform: translate(-5%);   
+    }
+    #about h1,#works h1{
+        text-align: center;
+    }
+    
+    .header{
+        background-image: url(/images/BannerAI-6.png);
+     
+    
+    }
+    .lucky3,.lucky4,.lucky5{
+        width: 50px;
+        height: 50px;
+    }
+    #about .lucky1,#about .lucky2{
+        width: 74px;
+        height: 77px;
+}
+} 
+
+@media (min-width:375px) and (max-width: 768px){
+    #works img{
+        width: 100%;
+        height: auto;
+        
+     }
+     #contact #lucky{
+        left: 0; 
+        transform: translate(-5%);   
+    }
+    #about h1,#works h1{
+        text-align: center;
+    }
+    
+    .header{
+        background-image: url(/images/BannerAI-5.png);
+    }
+    #about .lucky1,#about .lucky2{
+        width: 94px;
+        height: 97px;
+}
+}
+@media (min-width: 768px) and (max-width: 960px){
+     #works img{
+        width: 100%;
+        height: auto;
+        
+     }
+     #contact #lucky{
+        left: 20%;    
+    }
+    .header{
+        background-image: url(/images/BannerAI-4.png);
+    }
+    #about .lucky1,#about .lucky2{
+    width: 114px;
+    height: 117px;
+}
+ }
+ @media (min-width: 960px) and (max-width: 1024px){
+     #works img{
+        width: 100%;
+        height: auto; 
+     }
+     #contact #lucky{
+        left: 40%;
+    }
+    .header{
+        background-image: url(/images/BannerAI-3.png);
+    }
+ }
+@media (min-width: 1024px) and (max-width: 1366px){
+    #works img{
+        width: 100%;
+        height: auto;
+    }
+    #contact #lucky{
+        left: 60%;   
+    }
+    .header{
+        background-image: url(/images/BannerAI-2.png);
+    }
+
+        
+    
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl fixed-top white">
+        <div class="container">
+            <div class="navbar-header"> 
+                <a class="navbar-brand" href="#">
+                    <img src="/images/me.png" alt="我"> 
+                </a>
+            </div>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <i class="fas fa-bars"></i>
+                </button> 
+            
+           
+            <div class="collapse navbar-collapse  justify-content-end" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link 1" href="#about" data-toggle="tab">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link 2"  href="#works"data-toggle="tab">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link 3" href="#"data-toggle="tab">Future</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">   
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>I'm  Possible<br> Nothing Is Impossible</h1>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container"> 
+            <img class="cloud" src="/images/資產 1.png" alt="">
+            <img class="cloud"  src="/images/資產 4.png" alt="">
+            <img class="cloud"  src="/images/資產 3.png" alt="">
+        </div> -->
+    </header>
+    <i class="fas fa-volume-up" ></i>
+    
+        
+    
+    <div id="sun">
+        <img src="/images/lucky3.png" alt="">
+    </div>
+
+    <div id="content">
+        
+        <section id="about" data-bottom-top="tarnsform: translateY(-50px);opacity: 0" data-center="transform:translateY(0); opacity:1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>About</h1>
+                    </div>
+                    <div class="col-12">
+                        <img  class="me"src="/images/me.png" alt="我"> 
+                    </div>
+                    <div class="col-12">
+                        <h2>你好 我叫路易斯 目前正在朝成為 <br> 優秀的前端工程師努力中</h2>
+                    </div>
+                
+                    <div class="col-12">
+                        <img class="lucky1" src="/images/lucky.png" alt="">
+                        <img class="lucky2" src="/images/lucky.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" data-bottom-top="tarnsform: translateY(-50px);opacity: 0" data-center="transform:translateY(0); opacity:1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>以下服務</h1>
+                        <div class="col-md-6 col-sm-12">
+                            <img class="cloud1" src="/images/cloud1.png" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="p1">功能製作評估 時程規劃</p>
+                            
+                        </div>
+                        <i class="fas fa-sort-down"></i>
+                        <div class="col-md-6 col-sm-12">
+                            <img class="cloud2" src="/images/cloud2.png" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="p2">資料統整成簡單的架構並規劃</p>
+                            
+                           
+                        </div>
+                        <i class="fas fa-sort-down"></i>
+                        
+                        <div class="col-md-6 col-sm-12">
+                            <img  class="cloud3"src="/images/cloud3.png" alt="">
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="p3">簡單且精美的設計</p>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h2>如果喜歡下面的案子請跟我聯絡<br>您不會失望的</h2>
+                    </div>
+                
+                
+                    <div id="lucky" class="col-12">
+                        <img class="lucky3" src="/images/lucky1.png" alt="">
+                        <img class="lucky4" src="images/lucky2.png" alt="">
+                        <img class="lucky5" src="images/lucky3.png" alt="">
+                    </div> 
+                </div>   
+            </div>
+            
+        </section>
+        <section id="works" data-bottom-top="tarnsform: translateY(-50px);opacity: 0" data-center="transform:translateY(0); opacity:1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Works</h1>
+                        </div>
+                        <div class="wrap">
+                            <iframe src="https://louisex222.github.io/shop/"   height="300" width="968"></iframe>
+                            <iframe src="https://louisex222.github.io/mp3/"  height="800" width="968"></iframe>
+                            <iframe src="https://louisex222.github.io/vue-todolist/"  height="300" width="968" frameborder="0"></iframe>
+                            <iframe src="https://louisex222.github.io/map/" height="800" width="968" frameborder="0"></iframe>
+
+                        </div>
+                        
+                    </div>
+                </div>    
+                
+        </section>
+    </div>
+    
+    <footer id="footer">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <P>© 2019 Louis Zhang. All Rights Reserved. </P>
+                </div>
+                <div class="col-12">
+                    <a href="https://www.instagram.com/louisex222/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/louisex222/">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>  
+                </div>
+            </div>     
+        </div>    
+        
+    </footer>
+     <audio loop="loop" autoplay=true>
+        <source src="/sounds/dream.mp3" type="audio/mpeg">
+      
+    </audio> 
+    <script>
+        let button = document.querySelector('.fa-volume-up')
+        let audio = document.querySelector('audio')
+    button.onclick=function(){
+        if(audio.volume ==1){
+            audio.volume =0
+            button.className ='fas fa-volume-mute'
+        }else if(audio.volume ==0){
+            audio.volume =1
+            button.className ='fas fa-volume-up'
+        }
+        
+    }
+        
+        $(document).on('click', 'a', function(event){
+    event.preventDefault();
+    
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+        });
+
+    var s = skrollr.init();
+        $(window).scroll(function(){
+            if ($(window).scrollTop()>0)
+            $("nav").removeClass("white")
+            else
+            $("nav").addClass("white")
+        },)
+    
+    //     $(document).mousemove(function(evt){
+
+    //     $("#sun").css("left",evt.pageX+'px').css("top",evt.pageY+'px')
+        
+        
+    // })
+   
+   
+    
+    var img = {
+    1:"<img src='images/lucky1.png'/>",
+    2:"<img src='images/lucky2.png'/>",
+    3:"<img src='images/lucky3.png'/>"
+}
+    function loseSnow(){var posx = parseInt(1900*Math.random());   //產生一個1-1366的隨機數，即瀏覽器寬的隨機一個位置
+    var posy = parseInt(1900*Math.random());
+    var img_index = parseInt(3*Math.random())+1;
+
+    //產生一個img標籤，使其初始位置爲屏幕頂端的一個隨機點
+    var img = $("<img src='/images/lucky"+img_index+".png' style='width:40px;height:40px;position:absolute;top:0px;left:"+posx+"px'/>");$("body").append(img);
+    img.animate({ top: "4711px",left:posy}, 60000);  //img的軌跡是從1366中的一個位置到另一個位置，但垂直方向向下
+    setTimeout(function(){  //並在10秒後刪除該雪花釋放內存
+	img.remove();
+    },60000);
+}
+//每隔1秒產生一個雪花
+    setInterval(function(){  
+    loseSnow();
+},1000)   
+
+    console.log(document.body.clientHeight)
+    </script>
+    
+</body>
+</html>
